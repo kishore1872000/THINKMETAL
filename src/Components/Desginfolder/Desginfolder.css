@@ -1,0 +1,47 @@
+.design-folder-container {
+    text-align: center;
+    padding:2rem;
+    margin-top: 50px;
+    margin-bottom: 20px;
+  }
+  
+  .section-title {
+    font-weight: 600;
+    margin-bottom: 5rem;
+    color: #333;
+    font-size: 54px;
+  }
+  
+  .logos-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 0.6rem;
+    justify-items: center;
+    border-radius: 8px;
+  }
+  
+  .logo-item {
+    background-color: #F9FAFB;
+    padding: 1px;
+    width: 210px;
+    height: auto;
+  }
+
+  @media screen and (max-width: 450px) {
+    .logos-grid {
+      grid-template-columns: repeat(2, 1fr);
+      gap: 0.3rem;
+    }
+  
+    .logo-item {
+      width: 100px;
+    }
+  
+    .section-title {
+      font-size: 1.2rem;
+    }
+  
+    .design-folder-container {
+      padding: 1rem;
+    }
+  }

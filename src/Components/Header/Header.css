@@ -1,0 +1,224 @@
+.navbar {
+    margin-top: 5px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+    background-color: #fff;
+    height: 60px;
+}
+
+.navbar-logo {
+    display: flex;
+    align-items: center;
+    margin-left: 80px;
+}
+
+.logo {
+    margin-top: 0px;
+    width: 120px;
+    height: 100px;
+    margin-right: 8px;
+}
+
+.navbar-links {
+    margin-top: 20px;
+    list-style: none;
+    display: flex;
+    padding: 0;
+    margin-right: 200px;
+    font-weight: 600;
+    font-family: "Inter", sans-serif;
+}
+
+.navbar-links li {
+    margin: 0 20px;
+}
+
+.navbar-links a {
+    text-decoration: none;
+    color: #333;
+    font-size: 14px;
+}
+
+.navbar-links a:hover {
+    color: #868686;
+}
+
+.navbar-actions {
+    margin-top: -5px;
+    margin-right: -120px;
+    padding-left: 150px;
+    display: flex;
+    align-items: center;
+}
+
+.login-link {
+    margin-right: 20px;
+    color: #333;
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: 600;
+}
+
+.login-link:hover {
+    color: #868686;
+}
+
+.btn-start {
+    background-color: #ff5722;
+    color: white;
+    border: none;
+    padding: 8px 15px;
+    border-radius: 20px;
+    cursor: pointer;
+    font-size: 14px;
+    margin-right: 65px;
+}
+
+.btn-start:hover {
+    background-color: #e64a19;
+}
+
+.menu-icon {
+    display: none;
+    font-size: 24px;
+    cursor: pointer;
+}
+.mobile-menu {
+    position: absolute;
+    top: 60px;
+    left: 0;
+    width: 100%;
+    background: white;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    z-index: 10;
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    padding: 10px 0;
+  }
+  
+  .mobile-menu ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  .mobile-menu li {
+    padding: 10px 20px;
+  }
+  
+  .mobile-menu a {
+    text-decoration: none;
+    color: #333;
+    font-size: 14px;
+  }
+  
+  .mobile-menu a:hover {
+    color: #868686;
+  }
+  
+  .mobile-menu .btn-start {
+    padding: 8px 15px;
+    background-color: #ff5722;
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+    text-align: center;
+    margin: 5px 0;
+  }
+  
+
+@media screen and (max-width: 450px) {
+    .logo{
+        margin-left: -90px;
+    }
+    /* Dropdown menu styles */
+    .navbar-links {
+        background-color: rgb(255, 255, 255);
+        display: none;
+        position: absolute;
+        top: 60px;
+        left: 0;
+        width: 100%;
+        box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+        flex-direction: column;
+        text-align: left;
+        padding: 10px 0;
+        z-index: 99;
+    }
+
+    /* Show menu on active toggle */
+    .navbar-links.active {
+        display: flex;
+    }
+
+    .navbar-links li {
+        margin: 7px 12px;
+    }
+
+    /* Menu Icon visibility on small devices */
+    .menu-icon {
+        display: block;
+        margin-right: 20px;
+        cursor: pointer;
+        z-index: 99;
+    }
+
+    /* Navbar actions adjustments */
+    .navbar-actions {
+        display: flex;
+        justify-content: space-between;
+        margin: 30px 0px;
+        flex-wrap: wrap;
+    }
+
+    /* Login link with fixed alignment */
+    .login-link {
+        color: #333;
+        margin: 0 10px;
+        text-decoration: none;
+        font-size: 14px;
+    }
+
+    /* CTA Button with responsive size */
+    .btn-start {
+        font-size: 12px;
+        padding: 8px 15px;
+        background-color: #ff5722;
+        color: white;
+        border: none;
+        border-radius: 20px;
+        cursor: pointer;
+    }
+
+    .btn-start:hover {
+        background-color: #e64a19;
+    }
+}
+@media screen and (max-width: 450px) {
+    .image-scroll-container {
+      margin-top: -200px; /* Adjust margin for smaller screens */
+      overflow: hidden;
+    }
+  
+    .image-scroll {
+      animation: scroll 15s linear infinite; /* Adjust animation speed if necessary */
+    }
+  
+    .image-scroll img {
+      width: 100px; /* Reduce image size for smaller screens */
+      margin-right: 20px; /* Reduce spacing between images */
+    }
+  
+    @keyframes scroll {
+      from {
+        transform: translateX(0);
+      }
+      to {
+        transform: translateX(-80%); /* Adjust translation for smooth scrolling */
+      }
+    }
+  }
+  

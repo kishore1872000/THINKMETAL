@@ -1,0 +1,284 @@
+/* Feedback Container */
+.feedback-containers {
+  background: linear-gradient(180deg, #ff5500, #e14400);
+  min-height: 80vh;
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.feedback-headers {
+  margin-top: 100px;
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.feedback-timings {
+  font-size: 1rem;
+  color: #FFFFFF;
+}
+
+.feedback-headers h1 {
+  color: #FFFFFF;
+  font-size: 2.5rem;
+}
+
+/* Feedback Card */
+.feedback-cards {
+  background: #111111;
+  border-radius: 10px;
+  padding: 1.5rem;
+  width: 900px;
+  height: 260px;
+  margin-bottom: 2rem;
+}
+
+.card-headers {
+  margin-left: 80px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1rem;
+  background-color: #484848;
+  width: 44rem;
+  height: 8rem;
+  padding: 20px;
+  border-radius: 8px;
+  margin-top: -24px;
+}
+
+.brand-infos {
+  display: flex;
+  flex-direction: column;
+}
+
+.brand-logos {
+  margin-left: -15rem;
+  font-weight: bold;
+  color: #ffffff;
+}
+
+.brand-infos p {
+  margin-top: 0.5rem;
+  margin-left: -15rem;
+}
+
+.view-post-btns {
+  background-color: #ff4500;
+  color: #fff;
+  border: none;
+  padding: 10px 10px;
+  border-radius: 20px;
+  font-size: 1rem;
+  cursor: pointer;
+  width: 100px;
+}
+
+.feedback-detailss {
+  position: relative;
+  top: -5px;
+  margin-left: 120px;
+  font-size: 1rem;
+  color: #fff;
+  left: -60px;
+}
+
+/* Feedback Actions */
+.feedback-actionss {
+  display: flex;
+  gap: 1rem;
+}
+
+.action-items {
+  background: #111111;
+  border-radius: 10px;
+  padding: 3rem;
+  flex: 1;
+  text-align: center;
+  color: #fff;
+}
+
+.action-items span {
+  margin-left: -170px;
+  margin-top: -20px;
+  font-size: 2rem;
+  display: block;
+  margin-bottom: 0.5rem;
+}
+
+.action-items strong {
+  margin-top: 10px;
+  margin-left: -130px;
+  font-size: 1.2rem;
+  display: block;
+  margin-bottom: 0.5rem;
+}
+
+.action-items p {
+  width: 200px;
+  color: #737373;
+}
+
+.profile-avatarspart {
+  border-radius: 50%;
+  margin-left: -140px;
+  border: 2px solid white
+}
+
+.imagefolder {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  background: #484848;
+  width: 704px;
+  margin-left: 80px;
+  margin-top: -20px;
+  padding-bottom: 15px;
+}
+
+.profile-avatarspart1 {
+  margin-left: -20px;
+}
+
+.profile-avatarspart2 {
+  margin-left: -10px;
+}
+
+.logoimage {
+  width: 50px;
+}
+
+.Resolve {
+  padding-left: 70px;
+}
+
+@media screen and (max-width: 450px) {
+
+  /* Feedback Container */
+  .feedback-containers {
+    margin-top: 50px;
+    padding: 1rem;
+    min-height: auto;
+  }
+
+  .feedback-headers {
+    margin-top: 60px;
+    margin-bottom: 1rem;
+  }
+
+  .feedback-headers h1 {
+    font-size: 1.5rem;
+  }
+
+  .feedback-timings {
+    font-size: 0.875rem;
+  }
+
+  /* Feedback Card */
+  .feedback-cards {
+    width: 100%;
+    padding: 1rem;
+    height: auto;
+  }
+
+  .card-headers {
+    flex-direction: column;
+    align-items: flex-start;
+    width: 100%;
+    height: auto;
+    margin-left: 0;
+    margin-top: 0;
+  }
+
+  .brand-logos {
+    margin-left: 90px;
+    margin-top: -40px;
+    font-size: 1rem;
+  }
+
+  .brand-infos p {
+    margin-left: 90px;
+    margin-top: 5px;
+    font-size: 0.875rem;
+  }
+
+  .view-post-btns {
+    align-self: flex-start;
+    margin-top: 30px;
+    width: auto;
+    padding: 8px 12px;
+    font-size: 0.875rem;
+  }
+
+  .imagefolder {
+    flex-direction: column;
+    align-items: center;
+    margin-left: 0;
+    margin-top: 10px;
+    width: 100%;
+  }
+
+  .profile-avatarspart,
+  .profile-avatarspart1,
+  .profile-avatarspart2 {
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+  }
+
+  .profile-avatarspart {
+    margin-top: 10px;
+    margin-left: -240px;
+  }
+
+  .profile-avatarspart1 {
+    margin-top: -40px;
+    margin-left: -180px;
+  }
+
+  .profile-avatarspart2 {
+    margin-top: -40px;
+    margin-left: -120px;
+  }
+
+  .feedback-detailss {
+    margin-top: 40px;
+    margin-left: -20px;
+    left: 0;
+    text-align: center;
+    font-size: 0.875rem;
+  }
+
+  /* Feedback Actions */
+  .feedback-actionss {
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+
+  .action-items {
+    padding: 1.5rem;
+    padding-left: 2rem;
+    text-align: left;
+  }
+
+  .action-items span {
+    margin-left: 0;
+    font-size: 1.5rem;
+  }
+
+  .action-items strong {
+    margin-left: 0;
+    font-size: 1rem;
+  }
+
+  .action-items p {
+    width: auto;
+    font-size: 0.875rem;
+  }
+  .Resolve{
+    position: relative;
+    left: -70px;
+  }
+}

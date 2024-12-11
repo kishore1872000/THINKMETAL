@@ -1,0 +1,289 @@
+/* Feedback.css */
+.feedback-container {
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+    padding: 7rem;
+    padding-left: 3rem; /* Add space on the left */
+    padding-right: 3rem; /* Add space on the right */
+    margin: 0 auto; /* Center the container on the page */
+  }
+  
+  .feedback-card {
+    background-color: #1c1c1e;
+    color: #fff;
+    border-radius: 12px;
+    padding: 1.5rem;
+    width: 300px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  
+  }
+  
+  .feedback-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .feedback-header h3 {
+    margin: 0;
+    font-size: 1.2rem;
+  }
+  
+  .toggle-switch {
+    position: relative;
+    display: inline-block;
+    width: 40px;
+    height: 20px;
+  }
+  
+  .toggle-switch input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+  }
+  
+  .slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #ccc;
+    border-radius: 34px;
+    transition: 0.4s;
+  }
+  
+  .slider:before {
+    position: absolute;
+    content: '';
+    height: 16px;
+    width: 16px;
+    left: 2px;
+    bottom: 2px;
+    background-color: white;
+    border-radius: 50%;
+    transition: 0.4s;
+  }
+  
+  input:checked + .slider {
+    background-color: #ff4b2b;
+  }
+  
+  input:checked + .slider:before {
+    transform: translateX(20px);
+  }
+  
+  .feedback-list {
+    list-style: none;
+    padding: 0;
+    margin: 1rem 0;
+  }
+  
+  .feedback-item {
+    display: flex;
+    align-items: center;
+    margin-bottom: 1rem;
+  }
+  
+  .feedback-item .avatar {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    margin-right: 1rem;
+  }
+  
+  .feedback-item .details {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .feedback-item .name {
+    font-weight: bold;
+  }
+  
+  .feedback-item .status {
+    color: #bbb;
+  }
+  
+  .add-more {
+    background-color: #ff4b2b;
+    color: #fff;
+    border: none;
+    padding: 0.5rem 1rem;
+    border-radius: 8px;
+    cursor: pointer;
+  }
+  
+  .feedback-info {
+    max-width: 400px;
+  }
+  
+  .feedback-badge {
+    background-color: #ff4500;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 20px;
+    font-size: 1rem;
+    cursor: pointer;
+    z-index: 1;
+  }
+  
+  .feedback-info h2 {
+    font-size: 1.8rem;
+    margin: 1rem 0;
+  }
+  
+  .feedback-info p {
+    color: #666;
+  }
+  
+  .see-how {
+    background-color: transparent;
+    color: #ff4b2b;
+    border: 1px solid #ff4b2b;
+    padding: 0.5rem 1rem;
+    border-radius: 8px;
+    cursor: pointer;
+  }
+  .lefter{
+    margin-left: 100px;
+  }
+  .right-sections{
+    margin-left: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 100px;
+    background-color: #FAFAFA;
+    border-radius: 8px;
+  }
+  .headings {
+    font-family: 'Inter', sans-serif;
+    font-size: 54px;
+    font-weight: 600;
+    letter-spacing: -1px;
+  }
+  
+  /* Description Box */
+  .descriptions {
+    font-size: 16px;
+    color: #5F6980;
+    line-height: 1.8;
+    padding: 10px;
+    border-radius: 8px;
+  }
+  
+/* Play Button */
+.play-btn-containers {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  gap: 10px;
+}
+
+.play-btns {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 35px;
+  height: 35px;
+  background-color: #fb432c;
+  border-radius: 50%;
+}
+
+.play-icons {
+  color: white;
+  font-size: 16px;
+}
+@media screen and (max-width: 450px) {
+  .feedback-container {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 1rem;
+    padding: 1rem;
+  }
+
+  .feedback-card {
+    margin-top: 50px;
+    width: 300px;
+    padding: 1rem;
+    box-shadow: none;
+  }
+
+  .feedback-header h3 {
+    font-size: 1rem;
+  }
+
+  .toggle-switch {
+    width: 30px;
+    height: 15px;
+  }
+
+  .slider:before {
+    width: 12px;
+    height: 12px;
+    transform: translateX(0);
+  }
+
+  input:checked + .slider:before {
+    transform: translateX(15px);
+  }
+
+  .feedback-list {
+    margin: 0.5rem 0;
+  }
+
+  .feedback-item {
+    margin-bottom: 0.5rem;
+  }
+
+  .feedback-item .avatar {
+    width: 30px;
+    height: 30px;
+  }
+
+  .add-more {
+    width: 100%;
+    padding: 0.4rem;
+    font-size: 0.9rem;
+  }
+
+  .left-section {
+    width: 100%;
+    text-align: left;
+     margin-left: -10px;
+  }
+
+  .headings {
+    font-size: 32px;
+    line-height: 1.2;
+  }
+
+  .descriptions {
+    font-size: 14px;
+  }
+
+  .play-btn-containers {
+    gap: 8px;
+  }
+
+  .play-btns {
+    width: 30px;
+    height: 30px;
+  }
+
+  .play-icons {
+    font-size: 14px;
+  }
+
+  .lefter{
+   margin-left: 0px;
+  }
+  .right-sections {
+    margin-left: 0;
+    padding: 1rem;
+  }
+}

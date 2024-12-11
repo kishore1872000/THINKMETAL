@@ -1,0 +1,185 @@
+ .archive-container {
+     margin-top: 50px;
+     text-align: center;
+     padding: 2rem;
+     font-family: 'Inter', sans-serif;
+     margin-bottom: 80px;
+ }
+
+ .archive-containe h1 {
+     font-size: 2rem;
+     margin-bottom: 2rem;
+     color: #333;
+ }
+
+ .archive-sections {
+     margin-top: 5rem;
+     display: flex;
+     justify-content: center;
+     gap: 4rem;
+     flex-wrap: wrap;
+ }
+
+ .archive-card {
+     background: #f9f9f9;
+     border-radius: 10px;
+     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+     padding: 1.5rem;
+     width: 300px;
+     text-align: center;
+ }
+
+ .archive-card h2 {
+     font-size: 1.0rem;
+     color: #333;
+ }
+
+ .archive-card p {
+     margin-top: 10px;
+     font-size: 0.9rem;
+     color: #777;
+ }
+
+ .card-graph {
+     background: #ffffff;
+     margin-top: 1rem;
+     padding: 8px;
+     border-radius: 8px;
+ }
+
+ .graph-header {
+     display: flex;
+     justify-content: space-between;
+     align-items: center;
+ }
+
+ .monthly-button {
+     background-color: #ff5722;
+     color: #fff;
+     border: none;
+     padding: 0.5rem 0.8rem;
+     border-radius: 20px;
+     cursor: pointer;
+     font-size: 0.8rem;
+ }
+
+ .monthly-button:hover {
+     background-color: #e64a19;
+ }
+
+ .graph-chart {
+     height: 100px;
+
+     border-radius: 5px;
+     margin-top: 0.5rem;
+     position: relative;
+ }
+
+ .graph-data-point {
+     position: absolute;
+     top: 40%;
+     left: 60%;
+     transform: translate(-50%, -50%);
+     font-size: 0.8rem;
+     color: #333;
+     width: 20px;
+ }
+
+ .leads-number {
+     top: 50px;
+     position: relative;
+     left: -100px;
+     font-size: 1.0rem;
+ }
+
+ .leads-percentage {
+     top: 70px;
+     position: relative;
+     left: -175px;
+     font-size: 0.6rem;
+     color: #777;
+ }
+
+ .Vector1 {
+     margin-top: 30px;
+     margin-left: 20px;
+     width: 200px;
+ }
+
+ .Vector2 {
+     margin-left: 90px;
+     width: 150px;
+ }
+ .graph-price{
+   position: absolute;
+ }
+ @media screen and (max-width: 450px) {
+    .archive-container {
+      padding: 1rem;
+      font-size: 0.9rem;
+    }
+  
+    .archive-container h1 {
+        margin-left: 50px;
+        width: 250px;
+      font-size: 1.5rem;
+    }
+  
+    .archive-sections {
+      flex-direction: column;
+      gap: 2rem;
+    }
+  
+    .archive-card {
+        margin-left: 50px;
+      width: 70%;
+      padding: 1rem;
+    }
+  
+    .archive-card h2 {
+      font-size: 1rem;
+    }
+  
+    .archive-card p {
+      font-size: 0.8rem;
+    }
+  
+    .monthly-button {
+      padding: 0.4rem 0.6rem;
+      font-size: 0.7rem;
+    }
+  
+    .graph-chart {
+      height: 80px;
+    }
+  
+    .Vector1 {
+      width: 150px;
+      margin-left: 10px;
+    }
+  
+    .Vector2 {
+      width: 120px;
+      margin-left: 0;
+    }
+  
+    .leads-number {
+      font-size: 0.9rem;
+      left: -5;
+      top: 10;
+      text-align: center;
+      position: relative;
+    }
+  
+    .leads-percentage {
+      font-size: 0.7rem;
+      position: relative;
+       left: -160px;
+    }
+  
+    .graph-price p {
+      font-size: 0.7rem;
+     margin-top: 10px;
+    }
+  }
+  

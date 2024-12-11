@@ -1,0 +1,123 @@
+.containerer {
+  margin-top: 100px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  padding: 20px;
+  font-family: 'Inter', sans-serif; 
+}
+
+.iconer {
+  margin-bottom: 20px;
+}
+
+.logoer {
+  width: 50px;
+  height: 50px;
+  background-color: #ff4500;
+  border-radius: 8px;
+}
+
+.logo19er {
+  width: 40px;
+  margin-top:5px;
+}
+
+.titleer {
+  margin-top: 10px;
+  font-size: 1.5rem;
+  font-weight: bold;
+  margin-bottom: 10px;
+  color: #333;
+}
+
+.subtexter {
+  margin-top: 5px;
+  font-size: 1rem;
+  color: #666;
+  font-size: 20px;
+}
+
+.buttonser {
+  display: flex;
+  gap: 10px;
+}
+
+.btn {
+  margin-top: 20px;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  font-size: 1rem;
+  cursor: pointer;
+  margin-bottom: 100px;
+}
+
+.demoer {
+  background-color: transparent;
+}
+
+.free-actioner {
+  background-color: #ff4500;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 20px;
+    font-size: 1rem;
+    cursor: pointer;
+    z-index: 1;
+}
+
+.demo:hover,
+.free-actioner:hover {
+  opacity: 0.8;
+}
+@media screen and (max-width: 450px) {
+  .containerer {
+    padding: 10px;
+  }
+
+  .logoer {
+    width: 40px;
+    height: 40px;
+    background-color: #ff4500;
+  }
+
+  .logo19er {
+    width: 30px;
+    margin-top: 5px;
+  }
+
+  .titleer {
+    font-size: 1.2rem;
+    margin-top: 5px;
+    margin-bottom: 5px;
+  }
+
+  .subtexter {
+    font-size: 16px;
+    margin-top: 5px;
+  }
+
+  .buttonser {
+    flex-direction: row;
+    gap: 15px;
+    margin-top: 20px;
+  }
+
+  .btn {
+    padding: 8px 16px;
+    font-size: 0.9rem;
+  }
+
+  .free-actioner {
+    padding: 8px 16px;
+    font-size: 0.9rem;
+  }
+
+  .demoer {
+    padding: 8px 16px;
+    font-size: 0.9rem;
+  }
+}

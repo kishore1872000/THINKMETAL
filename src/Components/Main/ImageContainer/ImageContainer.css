@@ -1,0 +1,104 @@
+.ImageContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.Frame {
+    position: relative;
+    top: -380px;
+    left: 250px;
+}
+
+.framecontainer {
+    position: relative;
+    top: -420px;
+    left: 6px;
+}
+
+.framecontainer1 {
+    position: relative;
+    top: -320px;
+    left: -180px;
+}
+
+.framecontainer2 {
+    position: relative;
+    top: -190px;
+    left: -400px;
+}
+
+.framecontainer3 {
+    position: relative;
+    top: -250px;
+    left: -1100px;
+}
+
+.framecontainer4 {
+    position: relative;
+    top: -400px;
+    left: -1280px;
+}
+
+.framecontainer5 {
+    position: relative;
+    top: -130px;
+    left: -1400px;
+}
+
+@media screen and (max-width: 450px) {
+    .ImageContainer {
+        margin-top: 360px;
+
+    }
+
+    .Frame {
+        width: 28rem;
+        margin-left: -330px;
+    }
+
+    .framecontainer {
+        position: relative;
+        left: 160px;
+        margin-top: 70px;
+    }
+
+    .framecontainer1 {
+        position: relative;
+        left: 90px;
+        margin-top: -50px;
+    }
+
+    .framecontainer2 {
+        position: relative;
+        left: 100px;
+        margin-top: -220px;
+    }
+
+    .framecontainer3 {
+        position: relative;
+        left: -180px;
+        margin-top: -180px;
+    }
+
+    .framecontainer4 {
+        position: relative;
+        left: -280px;
+        margin-top: 0px;
+    }
+
+    .framecontainer5 {
+        position: relative;
+        left: -300px;
+        margin-top: -330px;
+    }
+
+    .Frame1,
+    .Frame2,
+    .Frame3,
+    .Frame4,
+    .Frame5,
+    .Frame6 {
+        width: 2rem;
+    }
+}
